@@ -1,18 +1,21 @@
-print('Verificar coordenadas')
+class musica:
+    nome = ''
+    artista = ''
+    duracao =  ''
 
-def verificador(x,y):
-    x = int(input('Digite o valor no eixo X'))
-    y = int(input('Digite o valor no eixo Y'))
+in_da_club = musica()
+in_da_club.nome = 'In da Club'
+in_da_club.artista = '50 cent'
+in_da_club.duracao = '3:13'
 
-    if x >=0 and y >0:
-        print('O ponto está no primeiro quadrante')
-    elif x < 0 and y > 0:
-        print('O ponto está no segundo quadrante')
-    elif x < 0 and y < 0:
-        print('O ponto está no terceiro quadrante')
-    elif x > 0 and y < 0:
-        print('O ponto está no quarto quadrante')
-    else:
-        print('O ponto é a origem')
+lose_yourself = musica()
+lose_yourself.nome = 'Lose yourself'
+lose_yourself.artista = 'Eminem'
+lose_yourself.duracao = '5:26'
 
-verificador()
+gold_digger = musica()
+gold_digger.nome = 'Gold Digger'
+gold_digger.artista = 'Kayne West'
+gold_digger.duracao = '3:27'
+
+print(vars(lose_yourself))
